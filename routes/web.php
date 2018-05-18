@@ -19,6 +19,11 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/getall', 'CategoryController@getall')->name('getall');
+Route::get('/prueba', function () {
+    return view('prueba');
+});
+
 //********** ARTICLES ROUTES ******************/
 //sirve para los 6 defecto
 Route::resource('article', 'ArticleController');
