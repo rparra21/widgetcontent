@@ -34,7 +34,11 @@ class CategoryController extends Controller
     {
         //
     }
-
+    public function guardar(Request $request)
+    {
+        //
+       dd($request);
+    }
     /**
      * Store a newly created resource in storage.
      *
@@ -44,7 +48,8 @@ class CategoryController extends Controller
     public function store(Request $request)
     {
         //
-        return "hola";
+        
+       dd(count($request->category));
     }
 
     /**

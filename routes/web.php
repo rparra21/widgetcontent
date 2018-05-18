@@ -20,6 +20,9 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/getall', 'CategoryController@getall')->name('getall');
+
+Route::post('guardar', 'CategoryController@guardar');
+
 Route::get('/prueba', function () {
     return view('prueba');
 });
